@@ -1,0 +1,46 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid black;
+    margin : auto;
+  
+}
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(img/png-clipart-tyrannosaurus-dino-t-rex-t-rex-chrome-vr-jump-trex-runner-lava-jump-dinosaur-angle-text-thumbnail.png);
+    background-size: 50px 50px;
+    position: relative;
+    top:150px
+
+}
+ 
+#cactus{
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+
+    left: 580px;
+    animation: moveCactus 2s linear infinite;
+}
+
+@keyframes moveCactus{
+    0%{left: 580px;}
+    100%{left: -20px;}
+}
+
+
+.jump{
+    animation: jumpDino 0.5s linear;
+}
+
+@keyframes jumpDino {
+    0%{ top:150px; }
+    30%{ top:110px; }
+    50%{ top:40px; }
+    70%{ top:110px; }
+    100%{ top:150px; }
+}
